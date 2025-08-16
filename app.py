@@ -29,7 +29,7 @@ app.add_middleware(
 
 load_dotenv()
 device = "cuda" if torch.cuda.is_available() else "cpu"
-embedding_model = SentenceTransformer('all-MiniLM-L6-v2').to(device)
+embedding_model = SentenceTransformer('models/all-MiniLM-L6-v2"').to(device)
 groq_api_key = os.getenv("GROQ_API_KEY")
 chat_model = ChatGroq(model="mistral-saba-24b", api_key=groq_api_key)
 
