@@ -11,5 +11,9 @@
       "src": "/(.*)",
       "dest": "/app.py"
     }
-  ]
+  ],
+  "env": {
+    "HUGGINGFACE_API_KEY": "@huggingface_api_key",
+    "GROQ_API_KEY": "@groq_api_key"
+  }
 }
